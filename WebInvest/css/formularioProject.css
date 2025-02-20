@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+html,
+:root {
+  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  height: 100%;
+}
+
+input {
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+body {
+  /* background: linear-gradient(180deg, #fe8c00 0%, #f83600 100%);*/
+  background: linear-gradient(200deg, var(--clr-primary-4), var(--clr-grey-9));
+  background-size: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 2px;
+
+ 
+  
+  
+  
+}
+
+/*Wrappers podem ser usadas em situações como no exemplo acima, onde eu quero dar alguma qualidade, como por exemplo centralizar ou dar algum padding, a um grupo de elementos HTML ou divs.*/
+
+#formulario {
+  width: 400px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 30px;
+  
+  
+}
+
+#formulario legend {
+  color: #00750a;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
+ 
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #393939;
+  cursor: pointer;
+}
+
+.input-group textarea {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 15px 10px;
+  display: block;
+  width: 95%;
+}
+
+.input-group input:not([type="radio"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+
+.input-group input:focus {
+  border-color: #20b2aa;
+}
+
+.input-group input:required:invalid {
+  border: 1px solid red;
+}
+.input-group input:required:valid{
+  border: 1px solid #00750a;
+}
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
+}
+
+.colunas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colunas .input-group {
+  width: 48%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.botao {
+  background: #3571b6;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #5988bd;
+}
+
+a {
+  font-weight: bold;
+  color: #0f5715;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-green-dark);
+}
+
+.final {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 14px;
+
+}
+
+

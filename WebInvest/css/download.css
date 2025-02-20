@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-orange: #ff6633;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #000;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
+/* Adiciona a cor do background da barra */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Estiliza o paragrafo inicial da navbar */
+.navbar p {
+  float: left;
+  color: #f2f2f2;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* estiliza os links dentro*/
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 14px 21px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Muda as cores dos links no hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Adiciona a cor ao link ativo atual */
+.navbar a.active {
+  background-color: var(--clr-green-dark);
+  color: white;
+}
+
+body {
+  background: linear-gradient(180deg, var(--clr-primary-4), var(--clr-grey-9));
+}
+
+#titulo {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--clr-black);
+  text-align: center;
+  margin-top: 6%;
+}
+
+
+#subtitulo {
+  font-family: sans-serif;
+  font-size: 21px;
+  color: var(--clr-black);
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+.btn-download {
+  margin: 50px auto;
+  text-align: center;
+  padding-bottom: 1.8rem;
+}
+
+.btn {
+
+  padding: 1.5rem 2.5rem;
+  font-size: 1.1rem;
+  color: var(--clr-white);
+  border: 1px solid #0f5715;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #0f5715;
+
+}
+
+
+.btn:hover {
+  border-radius: 49px;
+  background: var(--clr-green-dark);
+  color: #f2f2f2;
+  border: 1px solid var(--clr-green-dark);
+}
+
+.btn-plataformas {
+  width: calc(100%/2 - 20px);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+
+.btn-img {
+  margin: 3%;
+  padding: 1.7rem 2rem;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 1px solid var(--clr-white);
+
+}
+
+.btn-img-active{
+  margin: 3%;
+  padding: 1.7rem 2rem;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 4px solid var(--clr-green-dark);
+}
+.btn-img p{
+  font-family: sans-serif;
+  font-size: 15px;
+  
+
+}
+.btn-img:hover,
+.btn-img-active:hover{
+  color: var(--clr-green-dark);
+
+}
+
+.divisao{
+  height: 70px;
+  width:100%;
+}
+.lista h2{
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--clr-black);
+  font-size: 2.5rem;
+  margin: 2%;
+
+}
+.lista ul{
+  
+  list-style: none;
+  font-family: sans-serif;
+	font-size: 18px;
+	margin-left:12%;
+  margin-right: 12%;
+	margin-top: 3%; 
+}
+
+
+.lista ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-top: 2%;
+  margin-left: -1em; 
+  
+  color:var(--clr-green-dark);
+}
+
+
+#img{
+  width: calc(100%/2);
+  
+  max-height: 400px;
+}
+.container{
+  width: 100%;
+  background:var(--clr-white);
+  display:flex;
+}
+
+@media (min-width: 992px){
+.lista{
+    text-align: left !important;
+}
+#img{
+  height: calc((100vw /2 - 20px) /2);
+}
+
+}
+@media (max-width: 768px){
+  .btn {
+      width: calc(100% - 150px);
+  }
+  .btn-img {
+      height: calc((100vw /2 - 20px) /2);
+  }
+}
+
+
+@media (max-width: 425px){
+  .btn {
+      width: calc(100% - 220px);
+  }
+  .btn-img {
+      height: calc((100vw - 20px) /2);
+  }
+}
+
+
+@media (max-width: 320px){
+  .btn {
+      width: calc(100%);
+      margin: 10px 0;
+  }
+  .btn-img {
+      height: calc(100vw /2);
+  }
+}
+
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+  margin-left: 15%;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  font-weight: normal;
+  color:var(--clr-white);
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li a {
+  font-size: 14px;
+  font-family: var(--ff-primary);
+  font-weight: bold;
+  
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+a {
+  color:#ccc;
+}
+
+a:hover, a:focus {
+
+  color: white;
+}
+.social ul li a {
+  color: #9fa3a9;
+  display: inline-block;
+  padding-right: 5px !important;
+
+}
+.social ul li {
+	list-style: none;
+	margin: 0 15px;
+ 
+}
+
+
+ ul .facebook li a before{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgb(59, 89, 152);
+	transition: 0.5s;
+	transform: scale(.9);
+	z-index: -1;
+}
+
+ ul .facebook a:hover::before{
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgb(59, 89, 152);
+}
+
+ ul .facebook a:hover{
+	color: rgb(59, 89, 152);
+	text-shadow: 0 0 5px rgb(59, 89, 152);
+}
+ ul .instagram li a before{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgb(253, 26, 234);
+	transition: 0.5s;
+	transform: scale(.9);
+	z-index: -1;
+}
+
+ ul .instagram a:hover::before{
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgb(253, 26, 234);
+}
+
+ ul .instagram a:hover{
+	color: rgb(253, 26, 234);
+	text-shadow: 0 0 5px rgb(253, 26, 234);
+}
+ ul .twiiter li a before{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgb(0, 172, 238);
+	transition: 0.5s;
+	transform: scale(.9);
+	z-index: -1;
+}
+
+ ul .twitter a:hover::before{
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgb(0, 172, 238);
+}
+ ul  .twitter a:hover{
+	color: rgb(0, 172, 238);
+	text-shadow: 0 0 5px rgb(0, 172, 238);
+}
+
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+#rodape{
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 14px;
+	color: #f2f2f2;
+}
+
+
+
